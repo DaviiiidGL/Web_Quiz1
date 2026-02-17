@@ -55,10 +55,8 @@ public class ConsumosService : IConsumosService
     // Obtener total
     public double getTotal(Guid id)
     {
-        var Consumo = getById(id);
-
-        if (Consumo == null) return 0;
+        var consumo = getById(id);
         
-        return Consumo.total;
+        return consumo.total;
     }
 }

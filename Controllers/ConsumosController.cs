@@ -58,7 +58,7 @@ public class ConsumosController : Controller
     }
     
     // Get Total
-    [HttpGet("{id}")]
+    [HttpGet("{id}/getTotal")]
     public IActionResult getTotal(Guid id)
     {
         var consumo = _consumosService.getTotal(id);
